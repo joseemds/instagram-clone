@@ -1,4 +1,4 @@
-defmodule InstagramClone.Schema.Users do
+defmodule InstagramClone.Schema.User do
   use Ecto.Schema
   import Ecto.Changeset
 

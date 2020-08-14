@@ -5,7 +5,6 @@ defmodule InstagramCloneWeb.Router do
     plug :accepts, ["html"]
     plug :fetch_session
     plug :fetch_live_flash
-    plug :put_root_layout, {InstagramCloneWeb.LayoutView, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
   end
@@ -17,7 +16,7 @@ defmodule InstagramCloneWeb.Router do
   scope "/", InstagramCloneWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    get "/alo", SessionController, :index
   end
 
   # Other scopes may use custom stacks.
