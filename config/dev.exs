@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :instagram_clone, InstagramClone.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "docker",
   database: "instagram_clone_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
