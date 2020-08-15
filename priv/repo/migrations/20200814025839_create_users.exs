@@ -5,7 +5,7 @@ defmodule InstagramClone.Repo.Migrations.CreateUsers do
     create_if_not_exists table(:users) do
       add :name, :string
       add :username, :string
-      add :password, :string
+      add :password_hash, :string
       timestamps()
     end
   end
